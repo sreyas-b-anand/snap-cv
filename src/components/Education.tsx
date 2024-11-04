@@ -8,8 +8,8 @@ function Education() {
           <p className="px-3 py-1 border max-w-[120px] text-center rounded-lg">Education</p>
         </div>
         <div className="flex justify-start   gap-6 items-start p-5  py-8 border w-full rounded-lg">{/*card*/}
-          <div className="bg-black text-white rounded-full w-[60px] h-[60px] flex items-center justify-center ">
-            MEC
+          <div className="bg-black text-white   h-full flex items-center justify-center ">
+            <p className="w-[60px] h-[60px] rounded-[50%] flex items-center justify-center">MEC</p>
           </div>
           <main className="flex flex-col text-[15px] gap-1">
             <header>Govt. Model Engineering College</header>

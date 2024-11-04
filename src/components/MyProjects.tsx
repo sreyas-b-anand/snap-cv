@@ -19,7 +19,7 @@ function MyProjects() {
   ];
   return (
     <>
-      <main className="w-full max-w-[600px] flex flex-wrap flex-col gap-6  text-text pt-5">
+      <main className="w-full max-w-[600px] flex flex-wrap flex-col gap-6  text-text pt-5 px-5">
         <div className="text-center text-[18px] font-semibold w-full text-accent flex items-center justify-center py-5">
           <p className="px-3 py-1 border max-w-[140px] text-center rounded-lg">
             My Projects
@@ -30,18 +30,18 @@ function MyProjects() {
             return (
               <div
                 key={index}
-                className="flex gap-3 border-[1px] border-gray-300 w-full  rounded-lg max-w-full px-10"
+                className="flex gap-4 border-[1px] border-gray-300 w-full   rounded-lg max-w-full px-5 "
               >
                 <div className="flex items-center">
                   <Image
-                    width={60}
-                    height={60}
+                    width={80}
+                    height={80}
                     className="rounded-[50%]"
                     src={pr.img}
                     alt="logo"
                   />
                 </div>
-                <div className=" flex flex-col gap-2 items-start justify-center p-3 max-w-[400px] flex-wrap">
+                <div className=" flex flex-col gap-2 items-start justify-center py-3  max-w-[400px] flex-wrap">
                   <header className="text-[16px] w-full font-medium">
                     {pr.name}
                   </header>
