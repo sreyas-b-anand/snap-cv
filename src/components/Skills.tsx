@@ -1,4 +1,3 @@
-
 const Skills = () => {
   const skills = [
     "React",
@@ -17,16 +16,26 @@ const Skills = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center gap-9 flex-col flex-wrap">
+    <div className="py-5 flex items-center justify-center gap-9 flex-col flex-wrap text-text">
       <header className="flex flex-col gap-4">
-        <p className="text-[18px] font-semibold text-center p-4">Skills</p>
-      <main className="flex items-start justify-start gap-3 flex-wrap w-full">
-        {skills.map((sk, index) => {
-          return <div className=" rounded-xl p-2 text-[10px] bg-gray-500 text-white " key={index}>{sk}</div>;
-        })}
-      </main>
+        <div className="text-center text-[18px] font-semibold w-full text-accent flex items-center justify-center py-5">
+          <p className="px-3 py-1 border max-w-[140px] text-center rounded-lg">
+            Skills
+          </p>
+        </div>
+        <main className="flex items-start justify-start gap-3 flex-wrap w-full">
+          {skills.map((sk, index) => {
+            return (
+              <div
+                className=" rounded-xl p-2 text-[10px] bg-gray-300 text-text hover:text-white hover:cursor-pointer hover:bg-gray-500"
+                key={index}
+              >
+                {sk}
+              </div>
+            );
+          })}
+        </main>
       </header>
-      
     </div>
   );
 };
